@@ -1,4 +1,13 @@
 <html>
+    <style>
+        .svg_icon {
+            width: 20% !important;
+            border-style: none !important; 
+            background: none !important;
+        };
+
+
+    </style>
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha512-QYXU3Cojl94ZRiZRjUZpyg1odj9mKTON9MsTMzGNx/L3JqvMA3BQNraZwsZ83UeisO+QMVfFa83SyuYYJzR9hw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.min.js" integrity="sha512-7DEMfv8iM8rlGUiVduuJQGcTazyiw+7PSxEMGuPzk+sW8KLZiSh5TrkCNTbjpNVL1o7grRlXTN+OQLEFuYGVxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -9,43 +18,125 @@
     <body>
         <div class="reveal">
         <div class="slides">
-            <section>
-                <h1>What an Experience... :)</h1>
-                <h2>Using the ArcGIS Experience Builder to Build Custom Applications.</h2>
-            </section>
-            <aside class="notes">This is a note</aside>
-            <section>
-                <section>
-                    <h2>What is it?</h2>
-                    <p class="fragment fade-up">Item 1 </p>
-                    <p class="fragment fade-up">Item 2 </p>
-                    <p class="fragment fade-up">Item 3 </p>
-                    <p class="fragment fade-up">Item 4 </p>
-                </section>
-                <section>
-                    <h2>Slide 2</h2>
-                </section>
+            <section data-background-image="http://example.com/image.png">
+                <h1 class="r-fit-text">What an Experience...</h1>
+                <h2 class="r-fit-text">Using the ArcGIS Experience Builder to Build Custom Applications.</h2>
             </section>
             <section>
                 <section>
-                    <h2>This is Slide 3</h2>
+                    <h2>What's the problem</h2>
+                    <p class="fragment fade-up">Executive Manadate to map all the routes in Washington</p>
                 </section>
+            </section>
+            <section data-background-video="static\DigitizeRoutes.mp4" 
+            data-background-video-loop data-background-video-muted>
             </section>
             <section>
                 <section>
-                    <h2>This is Slide 4</h2>
+                    <h2>Ground Truthing all the data we created.</h2>
+                </section>
+                <section>
+                    <h2>How it was done in the past.</h2>
+                    <div class="r-stack">
+                        <img class="fragment" src="static/before.PNG" width="450" height="300">
+                        <img class="fragment" src="static/after.PNG" width="300" height="450">
+                      </div>
                 </section>
             </section>
             <section>
                 <section>
-                    <h2>This is Slide 5</h2>
-                    <h2>This is my Slide 5</h2>
+                    <h2>What were our requirements.</h2>
+                    <ul>
+                        <li class="fragment fade-up">Edit  Geometries</li>
+                        <li class="fragment fade-up">Add Attributes</li>
+                        <li class="fragment fade-up">Add New Features</li>
+                        <li class="fragment fade-up">Really Simple and Easy to Use</li> 
+                        <li class="fragment fade-up">No custom application development</li>
+                    </ul>
                 </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Our Solution...</h3>
+                </section>
+                <section>
+                    <h3>Experience Builder</h3>
+                    <div>
+                        <div>
+                            <img 
+                                class="svg_icon" 
+                                src="https://experience.arcgis.com/cdn/1454/site/widgets/landing/dist/runtime/assets/exb-logo.png"
+                            >
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="fragment fade-up">A No-Code Web Page and Application Builder.</li>
+                                <li class="fragment fade-up">Directly integreates into the ArcGIS Online Ecosystem.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>What's different</h3>
+                    <div>
+                        <div>
+                            <img class="svg_icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg">
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="fragment fade-up">Uses the latest ArcGIS JS API 4.0</li>
+                                <li class="fragment fade-up">Mobile Responsive Development</li>
+                                <li class="fragment fade-up">Uses modern web framework technologies</li>
+                                <li class="fragment fade-up">
+                                    Allows for development of non-map centric and multi-page application development.
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>So it's like Web App Builder...</h3>
+                    <div>
+                        <div
+                            <img class="svg_icon" src="https://www.esri.com/content/dam/esrisites/en-us/common/icons/product-logos/WebAppBuilder.png">
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="fragment fade-up">Uses the latest ArcGIS JS API 4.0</li>
+                                <li class="fragment fade-up">Mobile Responsive Development</li>
+                                <li class="fragment fade-up">Uses modern web framework technologies</li>
+                                <li class="fragment fade-up">
+                                    Allows for development of non-map centric and multi-page application development.
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Building An Application</h3>
+                </section>
+                <section data-background-iframe="https://experience.arcgis.com/" data-background-interactive></section>
+            </section>
+            <section>
+                <section>
+                    <h3>Using the Application</h3>
+                </section>
+                <section data-background-iframe="https://experience.arcgis.com/experience/34a867b080db405b8da9ce7155c37b14/" data-background-interactive></section>
+            </section>
+            <section>
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li class="fragment fade-up">Building simple web pages is quick and fun.</li>
+                    <li class="fragment fade-up">Feature Development is still in progress, some items may not be fully functional</li>
+                    <li class="fragment fade-up">Custom Styling can get difficult real quick.</li>
+                    <li class="fragment fade-up">Component state management is still lacking and is fully featured for modern app development.</li> 
+                </ul>
             </section>
         </div>
         </div>
         <script>
-
             Reveal.initialize({
                 controls: true,
 				progress: true,
@@ -53,6 +144,10 @@
 				center: true,
 
 				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                plugins: [
+                    RevealNotes
+                ]
             });
 
         </script>
