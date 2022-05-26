@@ -9,11 +9,13 @@
 
     </style>
     <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha512-QYXU3Cojl94ZRiZRjUZpyg1odj9mKTON9MsTMzGNx/L3JqvMA3BQNraZwsZ83UeisO+QMVfFa83SyuYYJzR9hw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/notes/notes.min.js" integrity="sha512-7DEMfv8iM8rlGUiVduuJQGcTazyiw+7PSxEMGuPzk+sW8KLZiSh5TrkCNTbjpNVL1o7grRlXTN+OQLEFuYGVxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="unpkg.com/browse/reveal.js@4.3.1/index.html"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha512-QYXU3Cojl94ZRiZRjUZpyg1odj9mKTON9MsTMzGNx/L3JqvMA3BQNraZwsZ83UeisO+QMVfFa83SyuYYJzR9hw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha512-V5fKCVKOFy36w8zJmLzPH5R6zU6KvuHOvxfMRczx2ZeqTjKRGSBO9yiZjCKEJS3n6EmENwrH/xvSwXqxje+VVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/moon.min.css" integrity="sha512-fIE1bAi7Yajoby7f9usOLSzdxew+pROc3K15ReE9q/9bFgJKi9xfNIfLLV0yRYdivOk8l6gKTIpOBx19F442Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/browse/reveal.js@3.9.2/css/reveal.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/browse/reveal.js@3.9.2/css/theme/moon.css"/>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha512-V5fKCVKOFy36w8zJmLzPH5R6zU6KvuHOvxfMRczx2ZeqTjKRGSBO9yiZjCKEJS3n6EmENwrH/xvSwXqxje+VVA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/moon.min.css" integrity="sha512-fIE1bAi7Yajoby7f9usOLSzdxew+pROc3K15ReE9q/9bFgJKi9xfNIfLLV0yRYdivOk8l6gKTIpOBx19F442Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     </head>
     <body>
         <div class="reveal">
@@ -43,10 +45,10 @@
                 </section>
                 <section>
                     <h2>How it was done in the past.</h2>
-                    <div class="r-stack">
-                        <img class="fragment" src="static/PARTubes.JPG" width="600" height="500">
-                        <img class="fragment" src="static/PrimaryAccessRoutes.jpg" width="600" height="750">
-                      </div>
+                    <div >
+                        <img class="fragment r-stack" src="static/PARTubes.JPG" width="600" height="500">
+                        <img class="fragment r-stack" src="static/PrimaryAccessRoutes.jpg" width="600" height="750">
+                    </div>
                 </section>
             </section>
             <section>
@@ -62,9 +64,6 @@
                 </section>
             </section>
             <section>
-                <section>
-                    <h3>Our Solution...</h3>
-                </section>
                 <section>
                     <h3>Experience Builder</h3>
                     <div>
@@ -118,27 +117,50 @@
                         </div>
                     </div>
                 </section>
+                <section>
+                    <h3>Why did we choose Experience Builder</h3>
+                    <div>
+                        <div>
+                            <ul>
+                                <li class="fragment fade-up">Simple Integration with ArcGIS Online</li>
+                                <li class="fragment fade-up">Can be shared publically with </li>
+                                <li class="fragment fade-up">Uses modern web framework technologies</li>
+                                <li class="fragment fade-up">
+                                    Allows for development of non-map centric and multi-page application development.
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section>
                 <section>
                     <h3>Building An Application</h3>
+                    <a href="https://experience.arcgis.com/" target="_blank"><img src="static/experience.arcgis.com" width="100%", height="100%"></a> 
                 </section>
-                <section data-background-iframe="https://experience.arcgis.com/" data-background-interactive></section>
             </section>
             <section>
                 <section>
                     <h3>Using the Application</h3>
+                    <a href="https://experience.arcgis.com/experience/34a867b080db405b8da9ce7155c37b14/" target="_blank"><img src="static/experience.arcgis.com.RouteReviewApplication.PNG" width="100%", height="100%"></a> 
                 </section>
-                <section data-background-iframe="https://experience.arcgis.com/experience/34a867b080db405b8da9ce7155c37b14/" data-background-interactive></section>
             </section>
             <section>
-                <h3>Key Takeaways</h3>
-                <ul>
-                    <li class="fragment fade-up">Building simple web pages is quick and fun.</li>
-                    <li class="fragment fade-up">Feature Development is still in progress, some items may not be fully functional</li>
-                    <li class="fragment fade-up">Custom Styling can get difficult real quick.</li>
-                    <li class="fragment fade-up">Component state management is still lacking and is fully featured for modern app development.</li> 
-                </ul>
+                <section>
+                    <h3>Key Takeaways</h3>
+                    <ul>
+                        <li class="fragment fade-up">Building simple web pages is quick and fun.</li>
+                        <li class="fragment fade-up">Feature Development is still in progress, some items may not be fully functional</li>
+                        <li class="fragment fade-up">Custom Styling can get difficult real quick.</li>
+                        <li class="fragment fade-up">Component state management is still lacking and is fully featured for modern app development.</li> 
+                    </ul>
+                </section>
+                <section>
+                    <h3>Key Takeaways</h3>
+                    <h3>We plan on continuing to use Experience Builder for building small scope projects </h3>
+                </section>
+            <section>
+            <section data-preload data-background-iframe="https://doc.arcgis.com/en/experience-builder/gallery/" data-background-interactive>
             </section>
         </div>
         </div>
@@ -151,9 +173,6 @@
 
 				transition: 'fade', // none/fade/slide/convex/concave/zoom
 
-                plugins: [
-                    RevealNotes
-                ]
             });
 
         </script>
